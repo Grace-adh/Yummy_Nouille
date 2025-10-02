@@ -134,3 +134,23 @@ footer img{
     margin-top: 2em;
     
 }
+
+.texte_menu{
+    margin-left: 5em;
+}
+.texte_menu p{
+    font-size: 1.5em;
+}
+.texte_menu p span{
+    color: #FF3800;
+}
+
+.menu{
+    text-align: center;
+    background-color: rgb(247, 249, 248);
+    width: 60em;
+    margin: auto;
+}
+.titre_entre , .titre_dessert  , .titre_plat , .titre_boisson{
+    text-decoration: underline #FF3800;
+}
