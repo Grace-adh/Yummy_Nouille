@@ -5,6 +5,27 @@
 nav{
     margin-top: 3em;
 }
+
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Soulignement rouge quand actif */
+.nav-link.active {
+  border-bottom: 2px solid red;
+}
+
+/* Effet au survol */
+.nav-link:hover {
+  color: red;
+}
+
 ul{
     display: flex;
     list-style: none;
@@ -154,3 +175,23 @@ footer img{
 .titre_entre , .titre_dessert  , .titre_plat , .titre_boisson{
     text-decoration: underline #FF3800;
 }
+
+.section_adresse{
+    display: flex;
+
+}
+.section_adresse div{
+     flex: 1;
+}
+.div_adr {
+ margin-left: 3em;
+}
+.div_adr div {
+    border-left: 1.2em solid  #FF3800;
+}
+.imgmaps{
+    width: 50em;
+    height: 35em;
+}
+
+

@@ -10,16 +10,65 @@
     <nav> <!-- Navigation -->
         <ul>
             <li><img src="images/OIP.jpg" alt="logo" class="logonav"></li>
-            <div>
-                <li><a href="acceuil.html">ACCEUIL</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </div>
+            <div class="nav-links">
+            <li><a href="acceuil.html" class="nav-link">ACCEUIL</a></li>
+            <li><a href="menu.html" class="nav-link">MENU</a></li>
+            <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </div>
         </ul>
     </nav><br>
     <div class="commande">
         <p>Commandez maintenant</p><br>
          <button class="click">CLICK & COLLECT</button>
     </div><br>
+    <section class="section_adresse">
+        <div class="div_adr">
+            <h1>NOS ADRESSES</h1>
+            <div class="div1">
+                <h2>Yummy noodle</h2>
+                <p>185 rue de Lancry</p>
+                <p>75010 Paris</p>
+                <p>+331 44 33 55 22</p>
+                <p>Lundi à Dimanche -12h à 23h</p>
+            </div><br><br>
+            <div>   
+                <h2>Yu Noodle My</h2>
+                <p>350 rue Saint-Guillaume</p>
+                <p>75007 Paris</p>
+                <p>+331 44 33 55 22</p>
+                <p>Lundi à Dimanche -12h à 23h</p>
+            </div><br><br>
+            <div>   
+                <h2>Les Yummy Nouilles</h2>
+                <p>208 rue au Maire</p>
+                <p>75007 Paris</p>
+                <p>+331 44 33 55 22</p>
+                <p>Lundi à Dimanche -12h à 23h</p>
+            </div>
+        </div>
+        <div>
+            <img src="images/maps.jpg" alt="Google Maps" class="imgmaps">
+        </div>
+    </section>
+    <section class="contact">
+        <h3 class="titre_contact">CONTACTEZ-NOUS</h3><br>
+        <p>Vous souhaitez nous poser une question, nous faire un feedback, ou tout simplement nous contacter?</p>
+        <p>Écrivez-vous à <strong>yummy@noodles.fr</strong> ou appelez nous au  <strong> 01 13 86 23 42</strong> </p>
+    </section><br><br>
+    <footer>
+        <img src="images/facebook-brands-solid-full.png" alt="">
+        <img src="images/instagram-brands-solid-full_1.png" alt="">
+        <img src="images/location-pin-solid-full_1.png" alt="">
+    </footer>
+<script>
+    const links = document.querySelectorAll(".nav-link");
+   const currentPage = window.location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    if(link.getAttribute("href") === currentPage){
+      link.classList.add("active");
+    }
+  });
+</script>
 </body>
 </html>

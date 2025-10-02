@@ -10,11 +10,11 @@
     <nav> <!-- Navigation -->
         <ul>
             <li><img src="images/OIP.jpg" alt="logo" class="logonav"></li>
-            <div>
-                <li><a href="acceuil.html">ACCEUIL</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </div>
+        <div class="nav-links">
+            <li><a href="acceuil.html" class="nav-link">ACCEUIL</a></li>
+            <li><a href="menu.html" class="nav-link">MENU</a></li>
+            <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+        </div>
         </ul>
     </nav><br>
     <div class="nom_yummy"><!-- Apres navigation-->
@@ -119,6 +119,15 @@
     }
     typeWriter();
 
+
+    const links = document.querySelectorAll(".nav-link");
+   const currentPage = window.location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    if(link.getAttribute("href") === currentPage){
+      link.classList.add("active");
+    }
+  });
 </script>
 </body>
 </html>
