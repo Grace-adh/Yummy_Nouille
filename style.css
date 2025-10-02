@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    margin-top: 3em;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul div{
+    display: flex;
+    margin-top: 2em;
+}
+li{
+   justify-content: left;
+   padding-left: 2em;
+   
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.logonav{
+    height: 5em;
+}
+.yummyred{
+    color: red;
+}
+.click{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.5em;
+    margin-left: 0.9em;
+
+}
+.nom_yummy{
+    display: flex;
+}
+h1{
+    font-size:5em;
+}
+.p_yummy{
+    font-size: 2em;
+    margin-left: 0.5em;
+}
+.div_yummy{
+    margin-left: 8em;
+}
+.yummy_img{
+    margin-left: 10em;
+}
+.logodiv{
+    height: 20em;
+}
+.titre_adresse{
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline red;
+}
+.adresse{
+    display:flex;
+   margin-left:7em;
+}
+.adresse div{
+    flex: 1;  
+}
+.adrimg{
+    width: 20em;
+    height: 15em;
+}
+.commande{
+    height: 8em;
+    background-color: #FF3800;
+    width: 100%;
+    text-align: center;
+}
+.commande p{
+    color: white;
+    font-size: 2em;
+    padding-top: 0.5em;
+}
+.titre_savoir{
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline yellow;
+}
+.savoir_faire p{
+    text-align: center;
+    width: 60em;
+    margin: auto;
+}
+.titre_reseaux{
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline #FF3800;
+}
+.divreseau1{
+    display: flex;
+    margin-left:7em;
+}
+.divreseau1 div{
+    flex:1;
+}
+.divreseau2{
+    display: flex;
+    margin-left:7em;
+}
+.divreseau2 div{
+    flex:1;
+}
+.titre_contact{ 
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: underline yellow;
+}
+.contact{
+    text-align: center;
+}
+footer{
+    background-color: black;
+    height: 6em;
+    display: flex;
+    justify-content: end;
+}
+footer img{
+    height: 3em;
+    width: 3em;
+    margin-top: 2em;
+    
+}
