@@ -1,4 +1,15 @@
-const texte="YUMMY NOUILLES"
+
+    const links = document.querySelectorAll(".nav-link");
+   const currentPage = window.location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    if(link.getAttribute("href") === currentPage){
+      link.classList.add("active");
+    }
+  });
+    
+    
+    const texte="YUMMY NOUILLES"
     let yummy=document.getElementById('yummynouilles');
     const speed=100;
 
@@ -12,13 +23,3 @@ const texte="YUMMY NOUILLES"
         }
     }
     typeWriter();
-
-
-    const links = document.querySelectorAll(".nav-link");
-   const currentPage = window.location.pathname.split("/").pop();
-
-  links.forEach(link => {
-    if(link.getAttribute("href") === currentPage){
-      link.classList.add("active");
-    }
-  });
