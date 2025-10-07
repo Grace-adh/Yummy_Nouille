@@ -170,6 +170,56 @@ footer img{
 }
 
 
+
+
+
+/*Fin style index*/
+
+/*Style menu */
+.texte_menu{
+   padding-left: 1em;
+}
+.texte_menu p{
+    font-size: 1.5em;
+}
+.texte_menu p span{
+    color: #FF3800;
+}
+
+.menu{
+    text-align: center;
+    background-color: rgb(247, 249, 248);
+    justify-content: center;
+}
+.titre_entre , .titre_dessert  , .titre_plat , .titre_boisson{
+    text-decoration: underline #FF3800;
+}
+
+/*Style contact*/
+
+
+
+
+.section_adresse{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1;
+}
+.section_adresse div{
+     flex: 1;
+}
+.div_adr {
+    display: grid;
+}
+.div_adr div {
+    border-left: 1.2em solid  #FF3800;
+}
+.imgmaps{
+    max-width: 100%; height: 30em;
+}
+
+
+
 /*media queries */
 
 @media (max-width: 768px) {
@@ -204,64 +254,9 @@ footer img{
   footer {
     justify-content: center;
   }
-
-  /*Menu*/
-  .texte_menu{
-   text-align: center;
-}
-.texte_menu p{
-   text-align: center;
-}
 .section_adresse{
-    display: flex;
-
-}
-
-}
-
-
-/*Fin style index*/
-/*Style menu */
-.texte_menu{
-   padding-left: 1em;
-}
-.texte_menu p{
-    font-size: 1.5em;
-}
-.texte_menu p span{
-    color: #FF3800;
-}
-
-.menu{
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    background-color: rgb(247, 249, 248);
-    justify-content: center;
 }
-.titre_entre , .titre_dessert  , .titre_plat , .titre_boisson{
-    text-decoration: underline #FF3800;
 }
-
-/*Style contact*/
-
-
-
-
-.section_adresse{
-    display: flex;
-
-}
-.section_adresse div{
-     flex: 1;
-}
-.div_adr {
- margin-left: 3em;
-}
-.div_adr div {
-    border-left: 1.2em solid  #FF3800;
-}
-.imgmaps{
-    max-width: 100%; height: 30em;
-}
-
-
-/*Responsivité*/
