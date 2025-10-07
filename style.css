@@ -2,11 +2,8 @@
     padding: 0;
     margin: 0;
 }
-nav{
-    margin-top: 3em;
-}
 
-
+/*Section navigation*/
 .nav-link {
   text-decoration: none;
   color: black;
@@ -29,15 +26,15 @@ nav{
 ul{
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 ul div{
     display: flex;
-    margin-top: 2em;
+    padding-top : 2em;
 }
 li{
-   justify-content: left;
    padding-left: 2em;
-   
 }
 li a{
     text-decoration: none;
@@ -57,44 +54,47 @@ li a{
     font-weight: bold;
     font-size: 1em;
     padding: 0.5em;
-    margin-left: 0.9em;
-
 }
 .nom_yummy{
     display: flex;
+   justify-content: center;
 }
 h1{
     font-size:5em;
+    width: 10em;
 }
 .p_yummy{
     font-size: 2em;
-    margin-left: 0.5em;
 }
-.div_yummy{
-    margin-left: 8em;
-}
+
 .yummy_img{
     margin-left: 10em;
 }
+
 .logodiv{
     height: 20em;
+}
+/*Section Adresse*/ 
+.adresse{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .titre_adresse{
     text-align: center;
     font-size: 1.5em;
     text-decoration: underline red;
 }
-.adresse{
-    display:flex;
-   margin-left:7em;
-}
+
 .adresse div{
-    flex: 1;  
+   padding-left: 4em;
+   padding-right: 4em;
 }
 .adrimg{
     width: 20em;
     height: 15em;
 }
+/*Section commande*/
 .commande{
     height: 8em;
     background-color: #FF3800;
@@ -106,6 +106,10 @@ h1{
     font-size: 2em;
     padding-top: 0.5em;
 }
+/*savoir faire*/
+.savoir_faire{
+    justify-content: center;
+}
 .titre_savoir{
     text-align: center;
     font-size: 1.5em;
@@ -113,28 +117,38 @@ h1{
 }
 .savoir_faire p{
     text-align: center;
-    width: 60em;
-    margin: auto;
+    width: 100%;
+    
 }
+/*section reseaux*/
 .titre_reseaux{
     text-align: center;
     font-size: 1.5em;
     text-decoration: underline #FF3800;
 }
+.reseaux{
+    justify-content: center;
+    display: grid;
+}
+
 .divreseau1{
     display: flex;
-    margin-left:7em;
+    flex-wrap: wrap;
 }
 .divreseau1 div{
-    flex:1;
+   padding-left: 4em;
+   padding-right: 4em;
 }
 .divreseau2{
     display: flex;
-    margin-left:7em;
+    flex-wrap: wrap;
 }
+
 .divreseau2 div{
-    flex:1;
+   padding-left: 4em;
+   padding-right: 4em;
 }
+
 .titre_contact{ 
     text-align: center;
     font-size: 1.5em;
@@ -152,9 +166,48 @@ footer{
 footer img{
     height: 3em;
     width: 3em;
-    margin-top: 2em;
-    
+    padding-top: 2em;
 }
+
+
+/*media queries */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .nom_yummy {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .yummy_img {
+    margin-left: 0;
+  }
+
+  .commande p {
+    font-size: 1.2em;
+  }
+
+  .adresse div {
+    padding: 1em;
+  }
+
+  .divreseau1, .divreseau2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    justify-content: center;
+  }
+}
+
+
+/*Fin style index*/
 
 .texte_menu{
     margin-left: 5em;
@@ -195,3 +248,4 @@ footer img{
 }
 
 
+/*Responsivité*/
