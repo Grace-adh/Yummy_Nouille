@@ -204,13 +204,26 @@ footer img{
   footer {
     justify-content: center;
   }
+
+  /*Menu*/
+  .texte_menu{
+   text-align: center;
+}
+.texte_menu p{
+   text-align: center;
+}
+.section_adresse{
+    display: flex;
+
+}
+
 }
 
 
 /*Fin style index*/
-
+/*Style menu */
 .texte_menu{
-    margin-left: 5em;
+   padding-left: 1em;
 }
 .texte_menu p{
     font-size: 1.5em;
@@ -222,12 +235,16 @@ footer img{
 .menu{
     text-align: center;
     background-color: rgb(247, 249, 248);
-    width: 60em;
-    margin: auto;
+    justify-content: center;
 }
 .titre_entre , .titre_dessert  , .titre_plat , .titre_boisson{
     text-decoration: underline #FF3800;
 }
+
+/*Style contact*/
+
+
+
 
 .section_adresse{
     display: flex;
@@ -243,8 +260,7 @@ footer img{
     border-left: 1.2em solid  #FF3800;
 }
 .imgmaps{
-    width: 50em;
-    height: 35em;
+    max-width: 100%; height: 30em;
 }
 
 
