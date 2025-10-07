@@ -197,9 +197,6 @@ footer img{
 
 /*Style contact*/
 
-
-
-
 .section_adresse {
   display: flex;
   flex-wrap: wrap;
@@ -208,12 +205,13 @@ footer img{
 }
 
 .section_adresse > div {
-  flex: 1 1 300px; /* largeur minimale */
+  flex: 1 /* 1 300px;  largeur minimale */
 }
 
 .div_adr {
   display: grid;
   gap: 1rem;
+  padding-left: 1rem;
 }
 
 .div_adr div {
@@ -223,9 +221,8 @@ footer img{
 
 /* Image adaptative */
 .imgmaps {
-  width: 100%;
+  min-width: 90%;
   height: auto;
-  border-radius: 8px;
 }
 
 /* --- RESPONSIVE --- */
